@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GE---AStar", "GE---AStar.vcxproj", "{9186F39B-2E8D-4AE5-9B6D-E49E0B5372F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9186F39B-2E8D-4AE5-9B6D-E49E0B5372F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9186F39B-2E8D-4AE5-9B6D-E49E0B5372F6}.Debug|Win32.Build.0 = Debug|Win32
+		{9186F39B-2E8D-4AE5-9B6D-E49E0B5372F6}.Release|Win32.ActiveCfg = Release|Win32
+		{9186F39B-2E8D-4AE5-9B6D-E49E0B5372F6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

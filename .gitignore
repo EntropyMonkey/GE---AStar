@@ -5,9 +5,40 @@
 
 # Compiled Dynamic libraries
 *.so
-*.dylib
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
+
+# VS files
+*.opensdf
+*.sdf
+*.pdb
+*.suo
+*.ilk
+*.exp
+*.tlog
+*.bi
+*.log
+*.lastbuildstate
+*.obj
+*.metagen
+*.intermediate.manifest
+*.cache
+/Debug
+
+/ipch
+/obj
+
+Images/sprites/L
+Images/sprites/M
+Images/sprites/S
+Images/sprites/XL
+
+*.aux
+*.dvi
+*.lof
+*.lol
+*.out
+*.toc

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\FSM">
+      <UniqueIdentifier>{db390b38-930e-4d39-89f9-ebd0ab543a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\A%2a">
+      <UniqueIdentifier>{cc37c4f7-3c54-4449-a9e1-c84e71282a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\FSM">
+      <UniqueIdentifier>{2f7d451b-c636-45eb-915b-aa7894fb4e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\A%2a">
+      <UniqueIdentifier>{e021262f-d90f-4480-ade5-c71be6193ed1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NPC.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid.cpp">
+      <Filter>Quelldateien\A%2a</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GridNode.cpp">
+      <Filter>Quelldateien\A%2a</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ChaseState.cpp">
+      <Filter>Quelldateien\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FleeState.cpp">
+      <Filter>Quelldateien\FSM</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Defines.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\NPC.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FSMState.h">
+      <Filter>Headerdateien\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FSM.h">
+      <Filter>Headerdateien\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graph.h">
+      <Filter>Headerdateien\A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid.h">
+      <Filter>Headerdateien\A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GridNode.h">
+      <Filter>Headerdateien\A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Link.h">
+      <Filter>Headerdateien\A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Node.h">
+      <Filter>Headerdateien\A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ChaseState.h">
+      <Filter>Headerdateien\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FleeState.h">
+      <Filter>Headerdateien\FSM</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
