@@ -8,6 +8,7 @@ GridNode::GridNode(int _x, int _y) :
 {
 	npc = NULL;
 	blocked = false;
+	eCost = INFINITY;
 }
 
 void GridNode::AddLink(GridNode *targetNode, float cost)
@@ -73,6 +74,11 @@ GridNode* GridNode::GetNearestNode(std::vector<GridNode*> &visited)
 	return nearest;
 }
 
+std::vector<Link<GridNode> > GridNode::GetConnections()
+{
+	return connections;
+}
+
 void GridNode::Block()
 {
 	// a vector to store links marked for deletion
@@ -100,4 +106,11 @@ void GridNode::Render()
 		std::cout << "x";
 	else if (npc != NULL)
 		npc->Render();
+	/*else if (inOpenSet)
+		std::cout << "o";
+	else if (inClosedSet)
+		std::cout << "c";*/
+	//
+	//if (current)
+	//	std::cout << "B";
 }

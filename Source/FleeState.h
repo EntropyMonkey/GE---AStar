@@ -1,6 +1,8 @@
 #ifndef FLEESTATE_H
 #define FLEESTATE_H
 
+#include <stdio.h>
+
 #include "FSMState.h"
 #include "NPC.h"
 
@@ -16,6 +18,7 @@ public:
 	void Exit();
 
 protected:
+	int counter;
 };
 
 #endif

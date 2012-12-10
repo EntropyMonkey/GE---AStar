@@ -8,22 +8,21 @@ ChaseState::ChaseState(NPC *_owner) :
 
 void ChaseState::Enter()
 {
-	visited.push_back(owner->currentNode);
+	owner->name = toupper(owner->name);
 }
 
 void ChaseState::Update()
 {
-	GridNode *newNode = owner->currentNode->GetNearestNode(visited);
+	if (owner->currentNode == owner->enemy->currentNode)
+	{
+		owner->ChangeState(owner->fleeState);
+		return;
+	}
 
-	if (newNode != NULL)
-	{
-		owner->MoveTo(newNode);
-		visited.push_back(owner->currentNode);
-	}
-	else
-	{
-		visited.clear();
-	}
+	GridNode *next = owner->grid->FindPathAStar(
+		owner->currentNode, owner->enemy->currentNode);
+
+	owner->MoveTo(next);
 }
 
 void ChaseState::Exit()

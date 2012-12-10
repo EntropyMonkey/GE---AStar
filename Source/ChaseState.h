@@ -2,6 +2,7 @@
 #define CHASESTATE_H
 
 #include <vector>
+#include <stdio.h>
 
 #include "FSMState.h"
 #include "NPC.h"
@@ -20,7 +21,6 @@ public:
 	void						Exit();
 
 protected:
-	std::vector<GridNode*>		visited;
 };
 
 #endif

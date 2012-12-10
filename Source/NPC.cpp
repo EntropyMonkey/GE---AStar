@@ -1,14 +1,17 @@
 #include "NPC.h"
 
-NPC::NPC() :
-	FSM<NPC>((FSMState<NPC>*)chaseState)
+NPC::NPC(GridNode *startNode, char _name = ' ') :
+	FSM<NPC>((FSMState<NPC>*)chaseState),
+	currentNode(startNode),
+	name(_name)
 {
+	currentNode->npc = this;
+
 	chaseState = new ChaseState(this);
 	fleeState = new FleeState(this);
 
 	currentState = chaseState;
 
-	name = "";
 }
 
 NPC::~NPC()

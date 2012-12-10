@@ -1,6 +1,6 @@
 #ifndef DEFINES_H
 #define DEFINES_H
 
-#define INFINITY 1.0f
+#define INFINITY 100000
 
 #endif
