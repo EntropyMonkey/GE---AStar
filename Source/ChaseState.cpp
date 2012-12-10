@@ -19,10 +19,8 @@ void ChaseState::Update()
 		return;
 	}
 
-	GridNode *next = owner->grid->FindPathAStar(
-		owner->currentNode, owner->enemy->currentNode);
-
-	owner->MoveTo(next);
+	owner->MoveTo(owner->grid->FindPathAStar(
+		owner->currentNode, owner->enemy->currentNode));
 }
 
 void ChaseState::Exit()

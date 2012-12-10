@@ -1,9 +1,9 @@
 #include "FleeState.h"
 
+
 FleeState::FleeState(NPC *owner) :
 	FSMState<NPC>(owner)
 {
-
 }
 
 void FleeState::Enter()

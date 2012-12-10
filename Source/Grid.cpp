@@ -45,7 +45,7 @@ void Grid::Create(int _width, int _height)
 	width = _width;
 	height = _height;
 
-	int x, y;
+	unsigned int x, y;
 
 	for (y = 0; y < height; y++)
 	{
@@ -219,7 +219,8 @@ GridNode* Grid::FindPathAStar(GridNode *start, GridNode *target)
 
 void Grid::Flush()
 {
-	for (int x = 0; x < width; x++) for (int y = 0; y < height; y++)
+	for (unsigned int x = 0; x < width; x++) 
+		for (unsigned int y = 0; y < height; y++)
 	{
 		int i = y * width + x;
 		/*nodes[i]->inClosedSet = false;
@@ -260,8 +261,8 @@ void Grid::PrintPath(map<GridNode*, GridNode*> &parentChain, GridNode *parent)
 
 void Grid::DrawToConsole()
 {
-	int x = 0;
-	int y = 0;
+	unsigned int x = 0;
+	unsigned int y = 0;
 
 	cout << "\t";
 	for(; x < width; x++)
